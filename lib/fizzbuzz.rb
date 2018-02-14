@@ -1,6 +1,6 @@
 
-module ExtraMethods
-def fizzbuzz
+class Integer
+  def fizzbuzz
     if self % 3 == 0 && self % 5 == 0
       "fizzbuzz"
     elsif self % 3 == 0
@@ -10,6 +10,5 @@ def fizzbuzz
     else
       "#{self}"
     end
+  end
 end
-end
-Integer.class_eval { include ExtraMethods }
